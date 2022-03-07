@@ -165,7 +165,10 @@ ol, li {
   right: 0;
   bottom: 0;
   left: 0;
+<<<<<<< HEAD
   top:100%;
+=======
+>>>>>>> 47a5d3a5e9068c4f254224f47a2bc0e55c65780b
   text-align: center;
 }
 
@@ -238,6 +241,7 @@ ol, li {
 }
 
 #carousel__slide1{
+<<<<<<< HEAD
     background-image: url("/img/Photography/Edited_Photos/Edited-22-01-16/20220116-_MG_0056.jpg");
 }
 
@@ -261,6 +265,15 @@ ol, li {
     background-image: url("/img/Photography/edited_Photos/Edited-22-01-16/20220116-_MG_0012.jpg");
 }
 
+=======
+    background-image: url("/img/Photography/_MG_0005.jpg");
+}
+
+#carousel__slide2 {
+    background-image: url("/img/Photography/_MG_0031.jpg");
+}
+
+>>>>>>> 47a5d3a5e9068c4f254224f47a2bc0e55c65780b
 @media(max-width:800px){
   .carousel::before {
   opacity: 0;
