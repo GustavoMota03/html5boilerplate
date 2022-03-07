@@ -38,7 +38,7 @@ $(function () {
       {
         scrollTop: $("#cv_cont").offset().top,
       },
-      100
+      500
     );
   }
 
@@ -47,7 +47,7 @@ $(function () {
       {
         scrollTop: $("#art").offset().top,
       },
-      100
+      500
     );
   }
 
