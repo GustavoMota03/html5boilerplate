@@ -23,9 +23,15 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body id="top">
   <!-- Add your site or application content here -->
+<a class="top-link hide" href="" id="js-top"></a>
+
+div.
+
 <div class="main_Container">
+<div class="sub">
+
   <div class="header_Wrapper">
     <div class="spacer"></div>
     <div class="Container">
@@ -34,10 +40,18 @@
   </div>
   </div>
 
+  <div class="navigation ">
+  <ul class="menu cursor-pointer ">
+      <li class="cvBtn">CURRICULUM</li>
+      <li class="artBtn">ARTE</li>
+      <!-- <li class="contactoBtn">CONTACTAR</li> -->
+    </ul>
+  </div>
+</div>
 
-  <div class="CV_Container">
+  <div class="CV_Container" id="cv_cont">
     <div class="perfil">
-      <h1>Curriculum Vitae</h1>
+      <h1 class="bold">Curriculum Vitae</h1>
       <img src="img/Photography/Profile_Photo.jpg" alt="Foto de Perfil"/>
       <div class="Descricao">
 
@@ -125,19 +139,22 @@
 </div>
 <div class="division">
   <div class="sobre">
-    <h2>Quem sou eu? </h2>
+    <h2 class="bold">Quem sou eu? </h2>
     <p>Olá, chamo me Gustavo Mota e tenho 18 anos.<br>Sou estudante do Curso de Programador de Informática, sou de Lisboa, Portugal e a área de tecnologia é uma das coisas que eu mais gosto. <br>Estou bastante interessado em me tornar um Full Stack Web Developer, e para isso tento aprender e perceber o melhor possível tudo oque aprendo. Pretendo no futuro viajar econhecer o mundo onde vivemos. <br>Adoro ajudar pessoas e principalmente trabalhar em equipa, pois como dizem "Duas cabeças pensam melhor que uma".<br>Considero-me uma pessoa social, ambiciosa, pontual e que se adapta bem às situações e ambientes.</p>
   </div>
 </div>
 
 <div class="section">
   <div class="one">
-    <h2>Experiência Profissional</h2>
+    <h2 class="bold">Experiência Profissional</h2>
     <p>Dia 02 de março de 2022, iniciei o estágio como Web/Software Developer na empresa Baseform.<br> Foi me dado um plano de estágio para me conseguir guiar a partir do mesmo, onde comecei por fazer o meu Web Site pessoal, no qual trabalhei com tecnologias como por exemplo, HTML, CSS, JavaScript e introduzi também jQuery.</p>
   </div>
 
   <!-- Carousel de Imagens -->
-  <div class="two carousel_container">
+
+  <div class="two carousel_container" id="art">
+<h2 class="bold" >Arte</h2>
+<p style="text-align:center">Todas as fotografias e desenhos a baixo foram capturadas e desenhadas por mim.</p>
 
 <section class="carousel" aria-label="Gallery">
   <ol class="carousel__viewport">
@@ -230,26 +247,21 @@
 
 <div class="three">
   <div class="first">
-<<<<<<< HEAD
     <img src="/img/Draws/Cute-Face/Cute-Face.png" alt="Paisagem"/>
-=======
-    <img src="/img/Photography/_MG_0019.jpg" alt="Paisagem"/>
->>>>>>> 47a5d3a5e9068c4f254224f47a2bc0e55c65780b
   </div>
   <div class="right">
-    <h2 class="bold">Expo</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+    <h2 class="bold">Desenho 1</h2>
+    <p>Software usado: Adobe Photoshop;</p><p>Ferramenta física: Mesa Digital Wacom;</p><p>Descrição: Como inspiração usei uma foto do pinterest e fui desenhando consoante o que achava correto. Por fim decidi apenas pintar os olhos para destacar os mesmos.</p>
   </div>
 </div>
 
 <div class="four">
   <div class="left">
-    <h2>Rapaz</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsum sapiente qui commodi.</p>
+    <h2 class="bold">Desenho 2</h2>
+    <p>Software usado: Adobe Photoshop;</p><p>Ferramenta física: Mesa Digital Wacom;</p><p>Descrição: Para este desenho, comecei por não ter qualquer objetivo nem desenho em mento, apenas fiz alguns rabiscos e a minha imaginação tomou conta do resto.</p>
   </div>
 
   <div class="second">
-<<<<<<< HEAD
     <img src="/img/Draws/Dark Face/Dark-face.png" alt="Rapaz"/>
   </div>
 </div>
@@ -259,33 +271,32 @@
     <img src="/img/Draws/Face-Purple-eye/Face-Purple-eye.png" alt="Paisagem"/>
   </div>
   <div class="right">
-    <h2 class="bold">Expo</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+    <h2 class="bold">Desenho 3</h2>
+     <p>Software usado: Adobe Photoshop;</p><p>Ferramenta física: Mesa Digital Wacom;</p><p>Descrição: Como o desenho numero 1, este também usei uma foto do pinterest como referência e fui desenhando, decedi no final também apenas pintar o olho para se destacar.</p>
   </div>
 </div>
 
 <div class="four">
   <div class="left">
-    <h2>Rapaz</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsum sapiente qui commodi.</p>
+    <h2 class="bold" >Desenho 4</h2>
+    <p>Software usado: Adobe Photoshop;</p><p>Ferramenta física: Mesa Digital Wacom;</p><p>Descrição: Este desenho foi feito para um presente de aniversário, onde tive de tentar replicar o sujeito da foto mas de uma forma mais animada</p>
   </div>
 
   <div class="second">
     <img src="/img/Draws/Luzio/Teste.png" alt="Rapaz"/>
-=======
-    <img src="/img/Photography/_MG_0005.jpg" alt="Rapaz"/>
->>>>>>> 47a5d3a5e9068c4f254224f47a2bc0e55c65780b
   </div>
 </div>
 
+<div class="burguer"></div>
+
+<div class="scrollToTopBtn"></div>
 </div>
 
-</div>
-
-
+<footer class="footer"><p>© Desenvolvido por Gustavo Mota ©</p></footer>
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 

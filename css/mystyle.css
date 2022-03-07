@@ -17,6 +17,10 @@ html, body{
     background: black;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 p, h1, h2, h3, h4, h5, h6{
     padding: 0;
     margin: 0;
@@ -26,13 +30,33 @@ p, h1, h2, h3, h4, h5, h6{
     width: 100%;
     height: 100%;
     position: relative;
+}
 
+.sub{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .header_Wrapper{
-     position: relative;
+    position: relative;
     height: 100%;
+    width: 50%;
+}
 
+.navigation{
+    width: 50%;
+    height: 100%;
+    Display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu li{
+    font-size:2.25rem;
 }
 
 .spacer{
@@ -193,7 +217,7 @@ p, h1, h2, h3, h4, h5, h6{
     margin: 55px 13%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 
 .one{
@@ -218,22 +242,100 @@ p, h1, h2, h3, h4, h5, h6{
     height: auto;
     border: 1px solid rgb(255,255,255);
     padding: 1px;
+    width:100%
 }
 
 .right{
-    width: 85%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .left{
-    width: 150%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: end;
 }
 
+/* .bottom-5 {
+    bottom: 1.25rem;
+}
+.right-5 {
+    right: 1.25rem;
+}
+.fixed {
+    position: fixed;
+}*/
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.scrollToTopBtn {
+  /* same general styles as before */
+
+  /* place it at the bottom-right corner */
+position: fixed;
+bottom: 30px;
+right: 30px;
+
+  /* keep it at the top of everything else */
+z-index: 100;
+
+  /* hide with opacity */
+opacity: 0;
+
+  /* also add a translate effect */
+transform: translateY(100px);
+
+  /* and a transition */
+transition: all .5s ease
+}
+
+.showBtn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer{
+    text-align: center;
+   background-color: #00fff2 ;
+   color: black;
+   font-size:0.8rem;
+}
+
+
+@media(max-width:1050px){
+
+    .block1{
+        justify-content:normal;
+    }
+
+    .block1, .block2{
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .block1, .block2 p{
+        width:100%
+    }
+
+}
+
+@media(max-width:926px){
+    .spacer{
+        position: relative;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        width: 100px;
+        display:inline-block;
+        margin-bottom: -23px;
+        margin-right: 10px;
+        top: 53%;
+        transform: translateY(50%);
+    }
+}
 
 @media (max-width: 800px) {
 
@@ -324,7 +426,6 @@ html, body {
     text-align: center;
 }
 
-<<<<<<< HEAD
 .four{
     display: flex;
     gap: 5px;
@@ -333,23 +434,21 @@ html, body {
     text-align: center;
 }
 
-=======
->>>>>>> 47a5d3a5e9068c4f254224f47a2bc0e55c65780b
+.left{
+    text-align: center;
 }
 
-@media(max-width:1050px){
+.navigation{
+    display: none;
+    width: 0;
+}
 
-    .block1{
-        justify-content:normal;
-    }
+.header_Wrapper{
+    width: 100%;
+}
 
-    .block1, .block2{
-        height: 100%;
-        flex-wrap: wrap;
-    }
+.burguer{
 
-    .block1, .block2 p{
-        width:100%
-    }
+}
 
 }
