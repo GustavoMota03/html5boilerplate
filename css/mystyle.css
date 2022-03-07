@@ -1,0 +1,352 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat_Regular.ttf") format("truetype"),
+       url("/fonts/Montserrat_Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    height: 100%;
+    color:white;
+    background: black;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+
+.main_Container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.header_Wrapper{
+     position: relative;
+    height: 100%;
+
+}
+
+.spacer{
+    position: relative;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 100px;
+    display:inline-block;
+    margin-bottom: -23px;
+    margin-right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Container{
+    position: absolute;
+    display:inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.Container h1{
+    font-size: 50px;
+    margin: 0%;
+}
+.Container p{
+    font-size: 20px;
+    margin: 0%;
+}
+
+/*Content*/
+
+/*Profile*/
+.CV_Container{
+    margin: 0px 13%;
+}
+
+.perfil img{
+    width:200px;
+    height: 200px;
+    margin:10px 0px;
+    display: inline-block;
+}
+
+.perfil > h1{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width:300px;
+    margin-bottom: 10px;
+}
+
+.Descricao{
+    position:relative;
+    display:inline-block;
+    top: 50%;
+    transform: translateY(32%);
+    margin: 18px;
+}
+
+/*Informações*/
+.content{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h2{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.size{
+    width: 33.33%;
+}
+.size h2{
+    width: 310px;
+}
+
+.size, .size2 p{
+    width: 40%;
+}
+
+.Developing h2 , .Contactos h2{
+    width: 230px;
+}
+
+.block1{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+    height:200px;
+    margin-top: 20px;
+    gap: 70px;
+}
+
+.block1 h2{
+    margin-bottom: 10px;
+}
+
+.Formacao p{
+    margin:0;
+}
+
+.Contactos p{
+    margin: 3px 0px;
+}
+
+#link{
+    color: #00fff2;
+}
+
+.size2{
+    width:20%;
+}
+
+
+.block2{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+    height: 200px;
+}
+
+.block2 h2{
+    margin-bottom: 10px;
+}
+
+.block2 p{
+    width: 100%;
+}
+
+/*.Design,.Developing .Hobbies p {
+    margin-bottom: 5px;
+}*/
+
+.ajuste{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.bold{
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.division{
+    width: calc(100%-26%);
+    padding:55px 13%;
+    margin-top:55px ;
+    color:black;
+    background: white
+}
+
+.sobre{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.section{
+    margin: 55px 13%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.one{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.three, .four{
+    display: flex;
+    width: 100%;
+    gap:20px;
+}
+
+
+.first .second{
+    width: 50%;
+}
+
+.first img , .second img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid rgb(255,255,255);
+    padding: 1px;
+}
+
+.right{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left{
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media (max-width: 800px) {
+
+.CV_Container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    margin:0;
+}
+
+.Container {
+    width: 100%;
+}
+
+.block1, .block2{
+    justify-content:center;
+    display: flex;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    gap: 70px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Descricao {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    align-items: center;
+    transform: translateY(0%);
+    margin:0;
+}
+
+.size, .size2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.section{
+    margin-top: 55px;
+}
+
+.one{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+html, body {
+    font-size: 1rem;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.spacer{
+    width: 0;
+}
+
+.division{
+    text-align: center;
+}
+
+.three{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.four{
+    display: flex;
+    gap: 5px;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+}
+
+@media(max-width:1050px){
+
+    .block1{
+        justify-content:normal;
+    }
+
+    .block1, .block2{
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .block1, .block2 p{
+        width:100%
+    }
+
+}
