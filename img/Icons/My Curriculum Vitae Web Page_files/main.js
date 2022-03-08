@@ -9,14 +9,10 @@ $(function () {
   let cvBtn = $(".cvBtn");
   let contactoBtn = $(".contactoBtn");
   let artBtn = $(".artBtn");
-  let bgBtn = $(".bgBtn");
-  let mbBtn = $(".mobile");
-  let inv = $(".invisible");
   btn.append(svg);
 
   var scrollToTopBtn = btn[0];
   var rootElement = document.documentElement;
-
   function handleScroll() {
     // Do something on scroll
     var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
@@ -29,15 +25,6 @@ $(function () {
     }
   }
 
-  function Mobile() {
-    if (mbBtn.hasClass("showMobile")) {
-      mbBtn.removeClass("showMobile");
-      $(inv).addClass("none");
-    } else {
-      mbBtn.addClass("showMobile");
-      $(inv).removeClass("none");
-    }
-  }
   function scrollToTop() {
     // Scroll to top logic
     rootElement.scrollTo({
@@ -53,8 +40,6 @@ $(function () {
       },
       500
     );
-    mbBtn.removeClass("showMobile");
-    $(inv).addClass("none");
   }
 
   function scrollToArt() {
@@ -64,22 +49,12 @@ $(function () {
       },
       500
     );
-    mbBtn.removeClass("showMobile");
-    $(inv).addClass("none");
   }
-
-  $(".invisible").on("click", function (e) {
-    if (mbBtn.hasClass("showMobile")) {
-      mbBtn.removeClass("showMobile");
-      $(inv).addClass("none");
-    }
-  });
 
   //scrollToTopBtn.addEventListener("click", scrollToTop);
 
   btn.click(scrollToTop);
   cvBtn.click(scrollToCV);
   artBtn.click(scrollToArt);
-  bgBtn.click(Mobile);
   document.addEventListener("scroll", handleScroll);
 });

@@ -21,7 +21,7 @@ html{
     scroll-behavior: smooth;
 }
 
-p, h1, h2, h3, h4, h5, h6, ul, li{
+p, h1, h2, h3, h4, h5, h6{
     padding: 0;
     margin: 0;
 }
@@ -30,6 +30,53 @@ p, h1, h2, h3, h4, h5, h6, ul, li{
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+.burguer{
+    display: flex;
+    flex-direction:row-reverse;
+    position: fixed;
+    width: 100%;
+}
+
+.circle{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #00fff2;
+    margin: 10px 10px 0px 0px;
+}
+
+
+.circle img{
+    max-width: 100%;
+    max-height: 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.mobile{
+    background: #00fff2;
+    width: 150px;
+    height: 190px;
+    border-radius: 5px 30px 5px 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.little{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align:center;
 }
 
 .sub{
@@ -449,88 +496,6 @@ html, body {
 
 .header_Wrapper{
     width: 100%;
-}
-
-.burguer{
-    display: flex;
-    flex-direction:row-reverse;
-    position: fixed;
-    right: 5px;
-    top: 5px;
-    z-index:101;
-}
-
-.circle{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background: #00fff2;
-    margin: 10px 10px 0px 0px;
-}
-
-
-.circle img{
-    max-width: 100%;
-    max-height: 100%;
-    height: 40px;
-    width: 40px;
-}
-
-.mobile{
-    opacity: 0;
-    display: flex;
-    flex-direction:row-reverse;
-    position: fixed;
-    right: 5px;
-    top: 5px;
-    z-index:101;
-}
-
-.little{
-    margin: 10px 10px 0px 0px;
-    background: #00fff2;
-    width: 150px;
-    height: 190px;
-    border-radius: 5px 30px 5px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    text-align:center;
-    font-size:18px;
-}
-
-.little>ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.showMobile{
-    opacity: 1;
-}
-
-.invisible{
-   /* background-color: red;
-    opacity: 0.7;
-    filter:alpha(opacity=70); */
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    visibility:visible;
-    z-index: 100;
-}
-
-.none{
-    display: none;
 }
 
 }
