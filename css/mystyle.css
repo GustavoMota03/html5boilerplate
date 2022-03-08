@@ -468,7 +468,7 @@ html, body {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background: #00fff2;
+    background: #00fff2af;
     margin: 10px 10px 0px 0px;
 }
 
@@ -492,7 +492,7 @@ html, body {
 
 .little{
     margin: 10px 10px 0px 0px;
-    background: #00fff2;
+    background: #00fff2af;
     width: 150px;
     height: 190px;
     border-radius: 5px 30px 5px 30px;
