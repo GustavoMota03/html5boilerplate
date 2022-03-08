@@ -310,6 +310,10 @@ footer{
    font-size:0.8rem;
 }
 
+.mobile, .burguer {
+    display: none;
+}
+
 
 @media(max-width:1050px){
 
