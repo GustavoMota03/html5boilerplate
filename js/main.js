@@ -83,3 +83,5 @@ $(function () {
   bgBtn.click(Mobile);
   document.addEventListener("scroll", handleScroll);
 });
+
+function hide() {}
