@@ -303,6 +303,16 @@ transition: all .5s ease
     transform: translateY(0);
 }
 
+.sections.animatable.active {
+    opacity: 1;
+}
+
+.sections.animatable {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
 footer{
     text-align: center;
    background-color: #00fff2 ;
@@ -332,7 +342,7 @@ footer{
 
 }
 
-@media(max-width:926px){
+@media(max-width:1086px){
     .spacer{
         position: relative;
         border-bottom: 2px solid rgb(255, 255, 255);
