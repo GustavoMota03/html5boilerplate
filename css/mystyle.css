@@ -502,13 +502,16 @@ html, body {
     right: 5px;
     top: 5px;
     z-index:101;
+    height: 0;
+    width:0;
+    transition: height 1s, opacity 0.5s, width 1s;
 }
 
 .little{
     margin: 10px 10px 0px 0px;
     background: #00fff2af;
-    width: 150px;
-    height: 190px;
+    /* width: 150px; */
+    /* height: 190px; */
     border-radius: 5px 30px 5px 30px;
     display: flex;
     flex-direction: column;
@@ -516,6 +519,9 @@ html, body {
     align-items: center;
     text-align:center;
     font-size:18px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .little>ul{
@@ -528,6 +534,8 @@ html, body {
 
 .showMobile{
     opacity: 1;
+    height:190px;
+    width: 150px;
 }
 
 .invisible{
